@@ -7,157 +7,141 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #ffc0cb; /* Pinkish background */
+            background-color: #ffe4ec;
             margin: 0;
             padding: 0;
-            text-align: center;
         }
         header {
             background-color: orange;
             padding: 15px;
+            text-align: center;
             font-size: 24px;
             color: white;
             font-weight: bold;
         }
-        .category {
-            margin: 30px auto;
-            max-width: 1000px;
+        header a {
+            background-color: white;
+            color: orange;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
         }
-        h2 {
-            margin-bottom: 15px;
+        .category {
+            padding: 20px;
+        }
+        .category h2 {
+            text-align: center;
+            color: #ff4081;
+            border-bottom: 2px solid #ff4081;
+            display: inline-block;
+            padding-bottom: 5px;
         }
         .products {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 15px;
+            margin-top: 15px;
         }
-        .products img {
-            width: 200px;
+        .product {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .product img {
+            max-width: 100%;
             height: 150px;
-            object-fit: cover;
-            border-radius: 10px;
+            border-radius: 8px;
             cursor: pointer;
-            transition: transform 0.2s ease;
         }
-        .products img:hover {
-            transform: scale(1.05);
-        }
-        /* Lightbox */
-        #lightbox {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.8);
-            display: none;
-            align-items: center;
-            justify-content: center;
-        }
-        #lightbox img {
-            max-width: 90%;
-            max-height: 80%;
-            border-radius: 10px;
+        .product p {
+            margin-top: 10px;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
 
-<header>
-    Java Plug - Your Affordable Connection to Quality Products in Kenya
-</header>
+    <header>
+        Java Plug - Your Affordable Connection to Quality Products in Kenya
+        <br><br>
+        <a href="https://forms.gle/g2cqrx2kfuMeWrcu8" target="_blank">Vendor Registration</a>
+    </header>
 
-<!-- Cars -->
-<div class="category">
-    <h2>Cars</h2>
-    <div class="products">
-        <img src="https://source.unsplash.com/400x300/?car" alt="Car">
-        <img src="https://source.unsplash.com/400x300/?sports-car" alt="Car">
-        <img src="https://source.unsplash.com/400x300/?luxury-car" alt="Car">
+    <!-- Cars -->
+    <div class="category">
+        <h2>Cars</h2>
+        <div class="products">
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Car"></a><p>Toyota Premio 2015</p></div>
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Car"></a><p>Honda Fit 2017</p></div>
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Car"></a><p>Subaru Forester 2018</p></div>
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Car"></a><p>Nissan X-Trail 2016</p></div>
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Car"></a><p>Mazda Demio 2019</p></div>
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Car"></a><p>Mercedes C200 2014</p></div>
+        </div>
     </div>
-</div>
 
-<!-- Houses -->
-<div class="category">
-    <h2>Houses</h2>
-    <div class="products">
-        <img src="https://source.unsplash.com/400x300/?house" alt="House">
-        <img src="https://source.unsplash.com/400x300/?modern-house" alt="House">
-        <img src="https://source.unsplash.com/400x300/?villa" alt="House">
+    <!-- Houses -->
+    <div class="category">
+        <h2>Houses</h2>
+        <div class="products">
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="House"></a><p>3 Bedroom House in Nairobi</p></div>
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="House"></a><p>Luxury Villa in Mombasa</p></div>
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="House"></a><p>2 Bedroom Apartment</p></div>
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="House"></a><p>Modern Bungalow</p></div>
+        </div>
     </div>
-</div>
 
-<!-- Land -->
-<div class="category">
-    <h2>Land</h2>
-    <div class="products">
-        <img src="https://source.unsplash.com/400x300/?land" alt="Land">
-        <img src="https://source.unsplash.com/400x300/?farm-land" alt="Land">
-        <img src="https://source.unsplash.com/400x300/?green-field" alt="Land">
+    <!-- Lands -->
+    <div class="category">
+        <h2>Lands</h2>
+        <div class="products">
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Land"></a><p>1 Acre in Kitengela</p></div>
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Land"></a><p>50x100 Plot in Thika</p></div>
+        </div>
     </div>
-</div>
 
-<!-- Groceries -->
-<div class="category">
-    <h2>Groceries</h2>
-    <div class="products">
-        <img src="https://source.unsplash.com/400x300/?groceries" alt="Groceries">
-        <img src="https://source.unsplash.com/400x300/?fruits" alt="Groceries">
-        <img src="https://source.unsplash.com/400x300/?vegetables" alt="Groceries">
+    <!-- Groceries -->
+    <div class="category">
+        <h2>Groceries</h2>
+        <div class="products">
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Groceries"></a><p>Fresh Tomatoes</p></div>
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Groceries"></a><p>Bananas</p></div>
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Groceries"></a><p>Watermelons</p></div>
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Groceries"></a><p>Fresh Carrots</p></div>
+        </div>
     </div>
-</div>
 
-<!-- Furniture -->
-<div class="category">
-    <h2>Furniture</h2>
-    <div class="products">
-        <img src="https://source.unsplash.com/400x300/?furniture" alt="Furniture">
-        <img src="https://source.unsplash.com/400x300/?sofa" alt="Furniture">
-        <img src="https://source.unsplash.com/400x300/?chair" alt="Furniture">
+    <!-- Furniture -->
+    <div class="category">
+        <h2>Furniture</h2>
+        <div class="products">
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Furniture"></a><p>Wooden Sofa Set</p></div>
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Furniture"></a><p>Dining Table</p></div>
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Furniture"></a><p>Office Chair</p></div>
+        </div>
     </div>
-</div>
 
-<!-- Utensils -->
-<div class="category">
-    <h2>Utensils</h2>
-    <div class="products">
-        <img src="https://source.unsplash.com/400x300/?utensils" alt="Utensils">
-        <img src="https://source.unsplash.com/400x300/?kitchen" alt="Utensils">
-        <img src="https://source.unsplash.com/400x300/?cooking" alt="Utensils">
+    <!-- Utensils -->
+    <div class="category">
+        <h2>Utensils</h2>
+        <div class="products">
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Utensils"></a><p>Non-stick Cooking Pot</p></div>
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Utensils"></a><p>Glass Cups</p></div>
+        </div>
     </div>
-</div>
 
-<!-- Kitchen Items -->
-<div class="category">
-    <h2>Kitchen Items</h2>
-    <div class="products">
-        <img src="https://source.unsplash.com/400x300/?kitchen-items" alt="Kitchen">
-        <img src="https://source.unsplash.com/400x300/?kitchenware" alt="Kitchen">
-        <img src="https://source.unsplash.com/400x300/?dishes" alt="Kitchen">
+    <!-- Kitchen Items -->
+    <div class="category">
+        <h2>Kitchen Items</h2>
+        <div class="products">
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Kitchen"></a><p>Microwave Oven</p></div>
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Kitchen"></a><p>Blender</p></div>
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Kitchen"></a><p>Electric Kettle</p></div>
+        </div>
     </div>
-</div>
-
-<!-- Lightbox -->
-<div id="lightbox">
-    <img src="" alt="Expanded View">
-</div>
-
-<script>
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = lightbox.querySelector('img');
-
-    document.querySelectorAll('.products img').forEach(img => {
-        img.addEventListener('click', () => {
-            lightbox.style.display = 'flex';
-            lightboxImg.src = img.src;
-        });
-    });
-
-    lightbox.addEventListener('click', () => {
-        lightbox.style.display = 'none';
-    });
-</script>
 
 </body>
 </html>
