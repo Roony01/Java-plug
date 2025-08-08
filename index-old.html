@@ -1,57 +1,117 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Java Plug</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #ffa726;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-      color: #333;
-    }
-    header {
-      padding: 20px;
-    }
-    img {
-      width: 200px;
-      margin-top: 20px;
-    }
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 1.2em;
-      margin-bottom: 30px;
-      padding: 0 20px;
-    }
-    .button {
-      display: inline-block;
-      padding: 15px 30px;
-      margin: 10px;
-      background-color: #333;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Plug - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #ff6600;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: #333;
+        }
+        nav ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a {
+            background-color: #ff6600;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 2rem;
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        h1 {
+            color: #ff6600;
+        }
+        p {
+            font-size: 18px;
+            text-align: center;
+        }
+        .vendor-btn {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <img src="https://raw.githubusercontent.com/roony01/java-plug-site/main/logo.png" alt="Java Plug Logo" />
+
+<header>
     <h1>Welcome to Java Plug</h1>
-    <p>Your affordable connection to quality products in Kenya</p>
+    <p>Your affordable connection to quality products in Kenya.</p>
+</header>
 
-    <p>
-      🌟 <strong>Are you a business owner or seller looking to expand your reach and boost sales?</strong><br>
-      Java Plug is your ultimate partner! We help promote your products directly to real buyers across Kenya through our vibrant network of digital agents and social media campaigns. Whether you sell fashion, electronics, beauty products, or anything in between — we’ll get your brand noticed. No upfront fees, just results. Let us connect you to more customers while you focus on growing your business. 🚀
-    </p>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cars.html">Cars</a></li>
+        <li><a href="groceries.html">Groceries</a></li>
+        <li><a href="utensils.html">Utensils</a></li>
+        <li><a href="kitchen.html">Kitchen</a></li>
+    </ul>
+    <a href="vendor.html">Become a Vendor</a>
+</nav>
 
-    <a href="https://forms.gle/g2cqrx2kfuMeWrcu8" class="button" target="_blank">Become a Vendor</a>
-  </header>
+<main>
+    <h1>Welcome to Java Plug!</h1>
+    <p>We provide an affordable connection to quality products, from cars to groceries, furniture, and more.  
+       Java Plug makes it easy for buyers and sellers to connect seamlessly.</p>
+
+    <div class="vendor-btn">
+        <a href="vendor.html" style="
+            background-color: #ff6600;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        ">
+            Become a Vendor
+        </a>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Java Plug. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
