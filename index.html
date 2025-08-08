@@ -6,118 +6,112 @@
     <title>Java Plug - Your Affordable Connection</title>
     <style>
         body {
+            background-color: #ffd6e7; /* Pinkish background */
             font-family: Arial, sans-serif;
-            background-color: #ffd6e0; /* Pinkish background */
             margin: 0;
             padding: 0;
+            color: #333;
+            text-align: center;
         }
         header {
             background-color: orange;
             padding: 15px;
-            text-align: center;
+        }
+        header a {
+            background-color: #ff6600;
             color: white;
-            font-size: 24px;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
         }
-        .intro {
-            text-align: center;
-            padding: 15px;
-            font-size: 18px;
+        h1 {
+            margin-top: 20px;
         }
-        .products {
+        .container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
+            gap: 20px;
             padding: 20px;
         }
-        .products img {
+        .item {
+            background: white;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+        }
+        .item img {
             width: 100%;
             border-radius: 10px;
             cursor: pointer;
-            transition: transform 0.2s;
+            transition: transform 0.3s;
         }
-        .products img:hover {
+        .item img:hover {
             transform: scale(1.05);
         }
-        /* Modal Styles */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0,0,0,0.8);
-        }
-        .modal-content {
-            display: block;
-            margin: 5% auto;
-            max-width: 80%;
-            border-radius: 10px;
-        }
-        .close {
-            position: absolute;
-            top: 20px;
-            right: 35px;
-            color: white;
-            font-size: 40px;
-            font-weight: bold;
-            cursor: pointer;
+        .item h3 {
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
 
 <header>
-    Java Plug - Your Affordable Connection to Quality Products in Kenya
+    <a href="https://forms.gle/g2cqrx2kfuMeWrcu8" target="_blank">Vendors</a>
 </header>
 
-<div class="intro">
-    Welcome to Java Plug! We connect you to the best products at unbeatable prices.  
-    Browse our collection below.
+<h1>Your Affordable Connection to Quality Products in Kenya</h1>
+
+<div class="container">
+    <div class="item">
+        <a href="https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg" target="_blank">
+            <img src="https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg" alt="Car">
+        </a>
+        <h3>Cars</h3>
+    </div>
+    <div class="item">
+        <a href="https://images.pexels.com/photos/4022102/pexels-photo-4022102.jpeg" target="_blank">
+            <img src="https://images.pexels.com/photos/4022102/pexels-photo-4022102.jpeg" alt="Groceries">
+        </a>
+        <h3>Groceries</h3>
+    </div>
+    <div class="item">
+        <a href="https://images.pexels.com/photos/4108823/pexels-photo-4108823.jpeg" target="_blank">
+            <img src="https://images.pexels.com/photos/4108823/pexels-photo-4108823.jpeg" alt="Utensils">
+        </a>
+        <h3>Utensils</h3>
+    </div>
+    <div class="item">
+        <a href="https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg" target="_blank">
+            <img src="https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg" alt="Kitchen Items">
+        </a>
+        <h3>Kitchen Items</h3>
+    </div>
+    <div class="item">
+        <a href="https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg" target="_blank">
+            <img src="https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg" alt="Furniture">
+        </a>
+        <h3>Furniture</h3>
+    </div>
+    <div class="item">
+        <a href="https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg" target="_blank">
+            <img src="https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg" alt="Electronics">
+        </a>
+        <h3>Electronics</h3>
+    </div>
+    <div class="item">
+        <a href="https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg" target="_blank">
+            <img src="https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg" alt="Clothes">
+        </a>
+        <h3>Clothes</h3>
+    </div>
+    <div class="item">
+        <a href="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg" target="_blank">
+            <img src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg" alt="Shoes">
+        </a>
+        <h3>Shoes</h3>
+    </div>
 </div>
-
-<div class="products">
-    <img src="https://via.placeholder.com/400x300?text=Car" alt="Car">
-    <img src="https://via.placeholder.com/400x300?text=House" alt="House">
-    <img src="https://via.placeholder.com/400x300?text=Land" alt="Land">
-    <img src="https://via.placeholder.com/400x300?text=Groceries" alt="Groceries">
-    <img src="https://via.placeholder.com/400x300?text=Furniture" alt="Furniture">
-    <img src="https://via.placeholder.com/400x300?text=Utensils" alt="Utensils">
-    <img src="https://via.placeholder.com/400x300?text=Kitchen+Items" alt="Kitchen Items">
-    <img src="https://via.placeholder.com/400x300?text=Electronics" alt="Electronics">
-</div>
-
-<!-- Modal for full image view -->
-<div id="imageModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="modalImg">
-</div>
-
-<script>
-    const modal = document.getElementById("imageModal");
-    const modalImg = document.getElementById("modalImg");
-    const images = document.querySelectorAll(".products img");
-    const closeBtn = document.querySelector(".close");
-
-    images.forEach(img => {
-        img.addEventListener("click", () => {
-            modal.style.display = "block";
-            modalImg.src = img.src;
-        });
-    });
-
-    closeBtn.addEventListener("click", () => {
-        modal.style.display = "none";
-    });
-
-    modal.addEventListener("click", (e) => {
-        if (e.target === modal) {
-            modal.style.display = "none";
-        }
-    });
-</script>
 
 </body>
 </html>
