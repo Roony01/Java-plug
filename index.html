@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Java Plug</title>
+    <title>Java Plug - Your Affordable Connection</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #ffe4ec;
+            background-color: #ffd6e0; /* Pinkish background */
             margin: 0;
             padding: 0;
         }
@@ -15,133 +15,109 @@
             background-color: orange;
             padding: 15px;
             text-align: center;
-            font-size: 24px;
             color: white;
-            font-weight: bold;
+            font-size: 24px;
         }
-        header a {
-            background-color: white;
-            color: orange;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-        .category {
-            padding: 20px;
-        }
-        .category h2 {
+        .intro {
             text-align: center;
-            color: #ff4081;
-            border-bottom: 2px solid #ff4081;
-            display: inline-block;
-            padding-bottom: 5px;
+            padding: 15px;
+            font-size: 18px;
         }
         .products {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 15px;
-            margin-top: 15px;
+            padding: 20px;
         }
-        .product {
-            background: white;
-            padding: 10px;
+        .products img {
+            width: 100%;
             border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .product img {
-            max-width: 100%;
-            height: 150px;
-            border-radius: 8px;
             cursor: pointer;
+            transition: transform 0.2s;
         }
-        .product p {
-            margin-top: 10px;
-            font-size: 14px;
+        .products img:hover {
+            transform: scale(1.05);
+        }
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.8);
+        }
+        .modal-content {
+            display: block;
+            margin: 5% auto;
+            max-width: 80%;
+            border-radius: 10px;
+        }
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        Java Plug - Your Affordable Connection to Quality Products in Kenya
-        <br><br>
-        <a href="https://forms.gle/g2cqrx2kfuMeWrcu8" target="_blank">Vendor Registration</a>
-    </header>
+<header>
+    Java Plug - Your Affordable Connection to Quality Products in Kenya
+</header>
 
-    <!-- Cars -->
-    <div class="category">
-        <h2>Cars</h2>
-        <div class="products">
-            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Car"></a><p>Toyota Premio 2015</p></div>
-            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Car"></a><p>Honda Fit 2017</p></div>
-            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Car"></a><p>Subaru Forester 2018</p></div>
-            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Car"></a><p>Nissan X-Trail 2016</p></div>
-            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Car"></a><p>Mazda Demio 2019</p></div>
-            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Car"></a><p>Mercedes C200 2014</p></div>
-        </div>
-    </div>
+<div class="intro">
+    Welcome to Java Plug! We connect you to the best products at unbeatable prices.  
+    Browse our collection below.
+</div>
 
-    <!-- Houses -->
-    <div class="category">
-        <h2>Houses</h2>
-        <div class="products">
-            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="House"></a><p>3 Bedroom House in Nairobi</p></div>
-            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="House"></a><p>Luxury Villa in Mombasa</p></div>
-            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="House"></a><p>2 Bedroom Apartment</p></div>
-            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="House"></a><p>Modern Bungalow</p></div>
-        </div>
-    </div>
+<div class="products">
+    <img src="https://via.placeholder.com/400x300?text=Car" alt="Car">
+    <img src="https://via.placeholder.com/400x300?text=House" alt="House">
+    <img src="https://via.placeholder.com/400x300?text=Land" alt="Land">
+    <img src="https://via.placeholder.com/400x300?text=Groceries" alt="Groceries">
+    <img src="https://via.placeholder.com/400x300?text=Furniture" alt="Furniture">
+    <img src="https://via.placeholder.com/400x300?text=Utensils" alt="Utensils">
+    <img src="https://via.placeholder.com/400x300?text=Kitchen+Items" alt="Kitchen Items">
+    <img src="https://via.placeholder.com/400x300?text=Electronics" alt="Electronics">
+</div>
 
-    <!-- Lands -->
-    <div class="category">
-        <h2>Lands</h2>
-        <div class="products">
-            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Land"></a><p>1 Acre in Kitengela</p></div>
-            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Land"></a><p>50x100 Plot in Thika</p></div>
-        </div>
-    </div>
+<!-- Modal for full image view -->
+<div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+</div>
 
-    <!-- Groceries -->
-    <div class="category">
-        <h2>Groceries</h2>
-        <div class="products">
-            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Groceries"></a><p>Fresh Tomatoes</p></div>
-            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Groceries"></a><p>Bananas</p></div>
-            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Groceries"></a><p>Watermelons</p></div>
-            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Groceries"></a><p>Fresh Carrots</p></div>
-        </div>
-    </div>
+<script>
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImg");
+    const images = document.querySelectorAll(".products img");
+    const closeBtn = document.querySelector(".close");
 
-    <!-- Furniture -->
-    <div class="category">
-        <h2>Furniture</h2>
-        <div class="products">
-            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Furniture"></a><p>Wooden Sofa Set</p></div>
-            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Furniture"></a><p>Dining Table</p></div>
-            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Furniture"></a><p>Office Chair</p></div>
-        </div>
-    </div>
+    images.forEach(img => {
+        img.addEventListener("click", () => {
+            modal.style.display = "block";
+            modalImg.src = img.src;
+        });
+    });
 
-    <!-- Utensils -->
-    <div class="category">
-        <h2>Utensils</h2>
-        <div class="products">
-            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Utensils"></a><p>Non-stick Cooking Pot</p></div>
-            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Utensils"></a><p>Glass Cups</p></div>
-        </div>
-    </div>
+    closeBtn.addEventListener("click", () => {
+        modal.style.display = "none";
+    });
 
-    <!-- Kitchen Items -->
-    <div class="category">
-        <h2>Kitchen Items</h2>
-        <div class="products">
-            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Kitchen"></a><p>Microwave Oven</p></div>
-            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Kitchen"></a><p>Blender</p></div>
-            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Kitchen"></a><p>Electric Kettle</p></div>
-        </div>
-    </div>
+    modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+</script>
 
 </body>
 </html>
