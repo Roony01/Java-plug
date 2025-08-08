@@ -1,99 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Java Plug - Your Affordable Connection</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #ffe4ec;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: orange;
-      padding: 15px;
-      text-align: center;
-    }
-    header a {
-      background-color: white;
-      color: orange;
-      padding: 10px 20px;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
-    }
-    h1 {
-      text-align: center;
-      color: #d63384;
-    }
-    .categories {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      padding: 20px;
-    }
-    .category {
-      background-color: white;
-      padding: 15px;
-      text-align: center;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .category img {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 10px;
-    }
-    .category a {
-      display: block;
-      margin-top: 10px;
-      color: #d63384;
-      font-weight: bold;
-      text-decoration: none;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Plug</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffc0cb; /* Pinkish background */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: orange;
+            padding: 15px;
+            font-size: 24px;
+            color: white;
+            font-weight: bold;
+        }
+        .category {
+            margin: 30px auto;
+            max-width: 1000px;
+        }
+        h2 {
+            margin-bottom: 15px;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .products img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+        .products img:hover {
+            transform: scale(1.05);
+        }
+        /* Lightbox */
+        #lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+        #lightbox img {
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
 
 <header>
-  <a href="https://forms.gle/g2cqrx2kfuMeWrcu8" target="_blank">Become a Vendor</a>
+    Java Plug - Your Affordable Connection to Quality Products in Kenya
 </header>
 
-<h1>Your Affordable Connection to Quality Products in Kenya</h1>
-
-<div class="categories">
-  <div class="category">
-    <img src="https://via.placeholder.com/200x150?text=Cars" alt="Cars">
-    <a href="cars.html">Cars</a>
-  </div>
-  <div class="category">
-    <img src="https://via.placeholder.com/200x150?text=Groceries" alt="Groceries">
-    <a href="groceries.html">Groceries</a>
-  </div>
-  <div class="category">
-    <img src="https://via.placeholder.com/200x150?text=Utensils" alt="Utensils">
-    <a href="utensils.html">Utensils</a>
-  </div>
-  <div class="category">
-    <img src="https://via.placeholder.com/200x150?text=Kitchen" alt="Kitchen Items">
-    <a href="kitchen.html">Kitchen Items</a>
-  </div>
-  <div class="category">
-    <img src="https://via.placeholder.com/200x150?text=Furniture" alt="Furniture">
-    <a href="furniture.html">Furniture</a>
-  </div>
-  <div class="category">
-    <img src="https://via.placeholder.com/200x150?text=Houses" alt="Houses">
-    <a href="houses.html">Houses</a>
-  </div>
-  <div class="category">
-    <img src="https://via.placeholder.com/200x150?text=Lands" alt="Lands">
-    <a href="lands.html">Lands</a>
-  </div>
+<!-- Cars -->
+<div class="category">
+    <h2>Cars</h2>
+    <div class="products">
+        <img src="https://source.unsplash.com/400x300/?car" alt="Car">
+        <img src="https://source.unsplash.com/400x300/?sports-car" alt="Car">
+        <img src="https://source.unsplash.com/400x300/?luxury-car" alt="Car">
+    </div>
 </div>
+
+<!-- Houses -->
+<div class="category">
+    <h2>Houses</h2>
+    <div class="products">
+        <img src="https://source.unsplash.com/400x300/?house" alt="House">
+        <img src="https://source.unsplash.com/400x300/?modern-house" alt="House">
+        <img src="https://source.unsplash.com/400x300/?villa" alt="House">
+    </div>
+</div>
+
+<!-- Land -->
+<div class="category">
+    <h2>Land</h2>
+    <div class="products">
+        <img src="https://source.unsplash.com/400x300/?land" alt="Land">
+        <img src="https://source.unsplash.com/400x300/?farm-land" alt="Land">
+        <img src="https://source.unsplash.com/400x300/?green-field" alt="Land">
+    </div>
+</div>
+
+<!-- Groceries -->
+<div class="category">
+    <h2>Groceries</h2>
+    <div class="products">
+        <img src="https://source.unsplash.com/400x300/?groceries" alt="Groceries">
+        <img src="https://source.unsplash.com/400x300/?fruits" alt="Groceries">
+        <img src="https://source.unsplash.com/400x300/?vegetables" alt="Groceries">
+    </div>
+</div>
+
+<!-- Furniture -->
+<div class="category">
+    <h2>Furniture</h2>
+    <div class="products">
+        <img src="https://source.unsplash.com/400x300/?furniture" alt="Furniture">
+        <img src="https://source.unsplash.com/400x300/?sofa" alt="Furniture">
+        <img src="https://source.unsplash.com/400x300/?chair" alt="Furniture">
+    </div>
+</div>
+
+<!-- Utensils -->
+<div class="category">
+    <h2>Utensils</h2>
+    <div class="products">
+        <img src="https://source.unsplash.com/400x300/?utensils" alt="Utensils">
+        <img src="https://source.unsplash.com/400x300/?kitchen" alt="Utensils">
+        <img src="https://source.unsplash.com/400x300/?cooking" alt="Utensils">
+    </div>
+</div>
+
+<!-- Kitchen Items -->
+<div class="category">
+    <h2>Kitchen Items</h2>
+    <div class="products">
+        <img src="https://source.unsplash.com/400x300/?kitchen-items" alt="Kitchen">
+        <img src="https://source.unsplash.com/400x300/?kitchenware" alt="Kitchen">
+        <img src="https://source.unsplash.com/400x300/?dishes" alt="Kitchen">
+    </div>
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox">
+    <img src="" alt="Expanded View">
+</div>
+
+<script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = lightbox.querySelector('img');
+
+    document.querySelectorAll('.products img').forEach(img => {
+        img.addEventListener('click', () => {
+            lightbox.style.display = 'flex';
+            lightboxImg.src = img.src;
+        });
+    });
+
+    lightbox.addEventListener('click', () => {
+        lightbox.style.display = 'none';
+    });
+</script>
 
 </body>
 </html>
