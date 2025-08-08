@@ -3,115 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Java Plug - Your Affordable Connection</title>
+    <title>Java Plug</title>
     <style>
         body {
-            background-color: #ffd6e7; /* Pinkish background */
             font-family: Arial, sans-serif;
+            background-color: #ffe4ec;
             margin: 0;
             padding: 0;
-            color: #333;
-            text-align: center;
         }
         header {
             background-color: orange;
             padding: 15px;
+            text-align: center;
+            font-size: 24px;
+            color: white;
+            font-weight: bold;
         }
         header a {
-            background-color: #ff6600;
-            color: white;
+            background-color: white;
+            color: orange;
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
-            font-weight: bold;
+            font-size: 16px;
         }
-        h1 {
-            margin-top: 20px;
-        }
-        .container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+        .category {
             padding: 20px;
         }
-        .item {
+        .category h2 {
+            text-align: center;
+            color: #ff4081;
+            border-bottom: 2px solid #ff4081;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .product {
             background: white;
-            border-radius: 10px;
             padding: 10px;
-            box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
-        }
-        .item img {
-            width: 100%;
             border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .product img {
+            max-width: 100%;
+            height: 150px;
+            border-radius: 8px;
             cursor: pointer;
-            transition: transform 0.3s;
         }
-        .item img:hover {
-            transform: scale(1.05);
-        }
-        .item h3 {
+        .product p {
             margin-top: 10px;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <a href="https://forms.gle/g2cqrx2kfuMeWrcu8" target="_blank">Vendors</a>
-</header>
+    <header>
+        Java Plug - Your Affordable Connection to Quality Products in Kenya
+        <br><br>
+        <a href="https://forms.gle/g2cqrx2kfuMeWrcu8" target="_blank">Vendor Registration</a>
+    </header>
 
-<h1>Your Affordable Connection to Quality Products in Kenya</h1>
+    <!-- Cars -->
+    <div class="category">
+        <h2>Cars</h2>
+        <div class="products">
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Car"></a><p>Toyota Premio 2015</p></div>
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Car"></a><p>Honda Fit 2017</p></div>
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Car"></a><p>Subaru Forester 2018</p></div>
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Car"></a><p>Nissan X-Trail 2016</p></div>
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Car"></a><p>Mazda Demio 2019</p></div>
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Car"></a><p>Mercedes C200 2014</p></div>
+        </div>
+    </div>
 
-<div class="container">
-    <div class="item">
-        <a href="https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg" target="_blank">
-            <img src="https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg" alt="Car">
-        </a>
-        <h3>Cars</h3>
+    <!-- Houses -->
+    <div class="category">
+        <h2>Houses</h2>
+        <div class="products">
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="House"></a><p>3 Bedroom House in Nairobi</p></div>
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="House"></a><p>Luxury Villa in Mombasa</p></div>
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="House"></a><p>2 Bedroom Apartment</p></div>
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="House"></a><p>Modern Bungalow</p></div>
+        </div>
     </div>
-    <div class="item">
-        <a href="https://images.pexels.com/photos/4022102/pexels-photo-4022102.jpeg" target="_blank">
-            <img src="https://images.pexels.com/photos/4022102/pexels-photo-4022102.jpeg" alt="Groceries">
-        </a>
-        <h3>Groceries</h3>
+
+    <!-- Lands -->
+    <div class="category">
+        <h2>Lands</h2>
+        <div class="products">
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Land"></a><p>1 Acre in Kitengela</p></div>
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Land"></a><p>50x100 Plot in Thika</p></div>
+        </div>
     </div>
-    <div class="item">
-        <a href="https://images.pexels.com/photos/4108823/pexels-photo-4108823.jpeg" target="_blank">
-            <img src="https://images.pexels.com/photos/4108823/pexels-photo-4108823.jpeg" alt="Utensils">
-        </a>
-        <h3>Utensils</h3>
+
+    <!-- Groceries -->
+    <div class="category">
+        <h2>Groceries</h2>
+        <div class="products">
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Groceries"></a><p>Fresh Tomatoes</p></div>
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Groceries"></a><p>Bananas</p></div>
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Groceries"></a><p>Watermelons</p></div>
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Groceries"></a><p>Fresh Carrots</p></div>
+        </div>
     </div>
-    <div class="item">
-        <a href="https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg" target="_blank">
-            <img src="https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg" alt="Kitchen Items">
-        </a>
-        <h3>Kitchen Items</h3>
+
+    <!-- Furniture -->
+    <div class="category">
+        <h2>Furniture</h2>
+        <div class="products">
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Furniture"></a><p>Wooden Sofa Set</p></div>
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Furniture"></a><p>Dining Table</p></div>
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Furniture"></a><p>Office Chair</p></div>
+        </div>
     </div>
-    <div class="item">
-        <a href="https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg" target="_blank">
-            <img src="https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg" alt="Furniture">
-        </a>
-        <h3>Furniture</h3>
+
+    <!-- Utensils -->
+    <div class="category">
+        <h2>Utensils</h2>
+        <div class="products">
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Utensils"></a><p>Non-stick Cooking Pot</p></div>
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Utensils"></a><p>Glass Cups</p></div>
+        </div>
     </div>
-    <div class="item">
-        <a href="https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg" target="_blank">
-            <img src="https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg" alt="Electronics">
-        </a>
-        <h3>Electronics</h3>
+
+    <!-- Kitchen Items -->
+    <div class="category">
+        <h2>Kitchen Items</h2>
+        <div class="products">
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Kitchen"></a><p>Microwave Oven</p></div>
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Kitchen"></a><p>Blender</p></div>
+            <div class="product"><a href="https://via.placeholder.com/600" target="_blank"><img src="https://via.placeholder.com/200" alt="Kitchen"></a><p>Electric Kettle</p></div>
+        </div>
     </div>
-    <div class="item">
-        <a href="https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg" target="_blank">
-            <img src="https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg" alt="Clothes">
-        </a>
-        <h3>Clothes</h3>
-    </div>
-    <div class="item">
-        <a href="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg" target="_blank">
-            <img src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg" alt="Shoes">
-        </a>
-        <h3>Shoes</h3>
-    </div>
-</div>
 
 </body>
 </html>
