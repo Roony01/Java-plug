@@ -1,150 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Java Plug</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-            color: #333;
-        }
-        body {
-    background-color: #ffd6e8; /* Slightly deeper pink */
-    margin: 0;
-    font-family: Arial, sans-serif;
-        }
-        }
-        header h1 {
-            margin: 0;
-            font-size: 1.5rem;
-            color: #ff6600;
-        }
-        .vendor-btn {
-            background-color: orange;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            font-size: 1rem;
-            cursor: pointer;
-            text-decoration: none;
-        }
-        .vendor-btn:hover {
-            background-color: darkorange;
-        }
-        .hero {
-            background: url('https://source.unsplash.com/1600x500/?shopping,market') no-repeat center center/cover;
-            height: 300px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-            font-size: 2rem;
-            font-weight: bold;
-        }
-        .container {
-            max-width: 1100px;
-            margin: auto;
-            padding: 20px;
-        }
-        .category {
-            margin-bottom: 30px;
-        }
-        .category h2 {
-            color: #ff6600;
-            border-bottom: 2px solid #ff6600;
-            padding-bottom: 5px;
-        }
-        .items {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-        }
-        .item {
-            background: white;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        .item img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 5px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 15px;
-            text-align: center;
-            margin-top: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Java Plug - Your Affordable Connection</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffe4ec;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: orange;
+      padding: 15px;
+      text-align: center;
+    }
+    header a {
+      background-color: white;
+      color: orange;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    h1 {
+      text-align: center;
+      color: #d63384;
+    }
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .category {
+      background-color: white;
+      padding: 15px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .category img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .category a {
+      display: block;
+      margin-top: 10px;
+      color: #d63384;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
 
 <header>
-    <h1>Java Plug</h1>
-    <a href="https://forms.gle/g2cqrx2kfuMeWrcu8" class="vendor-btn" target="_blank">Become a Vendor</a>
+  <a href="https://forms.gle/g2cqrx2kfuMeWrcu8" target="_blank">Become a Vendor</a>
 </header>
 
-<section class="hero">
-    Your affordable connection to quality products in Kenya
-</section>
+<h1>Your Affordable Connection to Quality Products in Kenya</h1>
 
-<div class="container">
-
-    <div class="category">
-        <h2>Cars</h2>
-        <div class="items">
-            <div class="item"><img src="https://source.unsplash.com/400x300/?car" alt=""><p>Luxury Car</p></div>
-            <div class="item"><img src="https://source.unsplash.com/400x300/?vehicle" alt=""><p>Family Car</p></div>
-        </div>
-    </div>
-
-    <div class="category">
-        <h2>Groceries</h2>
-        <div class="items">
-            <div class="item"><img src="https://source.unsplash.com/400x300/?groceries" alt=""><p>Fresh Vegetables</p></div>
-            <div class="item"><img src="https://source.unsplash.com/400x300/?fruits" alt=""><p>Tropical Fruits</p></div>
-        </div>
-    </div>
-
-    <div class="category">
-        <h2>Utensils</h2>
-        <div class="items">
-            <div class="item"><img src="https://source.unsplash.com/400x300/?utensils" alt=""><p>Kitchen Utensil Set</p></div>
-            <div class="item"><img src="https://source.unsplash.com/400x300/?cookware" alt=""><p>Cooking Pots</p></div>
-        </div>
-    </div>
-
-    <div class="category">
-        <h2>Furniture</h2>
-        <div class="items">
-            <div class="item"><img src="https://source.unsplash.com/400x300/?sofa" alt=""><p>Comfortable Sofa</p></div>
-            <div class="item"><img src="https://source.unsplash.com/400x300/?bed" alt=""><p>Modern Bed</p></div>
-        </div>
-    </div>
-
-    <div class="category">
-        <h2>Real Estate</h2>
-        <div class="items">
-            <div class="item"><img src="https://source.unsplash.com/400x300/?house" alt=""><p>Family House</p></div>
-            <div class="item"><img src="https://source.unsplash.com/400x300/?land" alt=""><p>Land for Sale</p></div>
-        </div>
-    </div>
-
+<div class="categories">
+  <div class="category">
+    <img src="https://via.placeholder.com/200x150?text=Cars" alt="Cars">
+    <a href="cars.html">Cars</a>
+  </div>
+  <div class="category">
+    <img src="https://via.placeholder.com/200x150?text=Groceries" alt="Groceries">
+    <a href="groceries.html">Groceries</a>
+  </div>
+  <div class="category">
+    <img src="https://via.placeholder.com/200x150?text=Utensils" alt="Utensils">
+    <a href="utensils.html">Utensils</a>
+  </div>
+  <div class="category">
+    <img src="https://via.placeholder.com/200x150?text=Kitchen" alt="Kitchen Items">
+    <a href="kitchen.html">Kitchen Items</a>
+  </div>
+  <div class="category">
+    <img src="https://via.placeholder.com/200x150?text=Furniture" alt="Furniture">
+    <a href="furniture.html">Furniture</a>
+  </div>
+  <div class="category">
+    <img src="https://via.placeholder.com/200x150?text=Houses" alt="Houses">
+    <a href="houses.html">Houses</a>
+  </div>
+  <div class="category">
+    <img src="https://via.placeholder.com/200x150?text=Lands" alt="Lands">
+    <a href="lands.html">Lands</a>
+  </div>
 </div>
-
-<footer>
-    &copy; 2025 Java Plug. All rights reserved.
-</footer>
 
 </body>
 </html>
